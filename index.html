@@ -5,16 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | QR code component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    :root {
+      --slate-900: #1F314F;
+      --slate-500: #68778D;
+      --slate-300: #D5E1EF;
+      --white: #FFF;
+      --space-500: 40px;
+      --space-300: 24px;
+      --space-200: 16px;
+
+      font-family: "Outfit", sans-serif;
+    }
+
+    .slate-900 { color: var(--slate-900); }
+    .slate-500 { color: var(--slate-500); }
+    .slate-300 { color: var(--slate-300); }
+    .slate-300-bg { background: var(--slate-300); }
+
+    .space-500 { padding: var(--space-500); }
+    .space-300 { padding: var(--space-300); }
+    .space-200 { padding: var(--space-200); }
+    .white { color: var(--white); }
+
+    .text-preset-1 {font-weight: 700; font-size: 22px; line-height: 120%;}
+    .text-preset-2 { font-weight: 400; font-size: 15px; line-height: 140%; letter-spacing: 0.2px;}
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="slate-300-bg">
 
   Improve your front-end skills by building projects
 
