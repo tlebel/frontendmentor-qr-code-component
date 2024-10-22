@@ -25,21 +25,49 @@
       font-family: "Outfit", sans-serif;
     }
 
-    .slate-900 { color: var(--slate-900); }
-    .slate-500 { color: var(--slate-500); }
-    .slate-300 { color: var(--slate-300); }
-    .slate-300-bg { background: var(--slate-300); }
-
-    .space-500 { padding: var(--space-500); }
-    .space-300 { padding: var(--space-300); }
-    .space-200 { padding: var(--space-200); }
-    .white { color: var(--white); }
-
     .text-preset-1 {font-weight: 700; font-size: 22px; line-height: 120%;}
     .text-preset-2 { font-weight: 400; font-size: 15px; line-height: 140%; letter-spacing: 0.2px;}
+    .slate-300-bg { background: var(--slate-300); }
 
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    article.card {
+      box-sizing: border-box;
+      background: var(--white);
+      border-radius: 20px;
+      padding: var(--space-200);
+      text-align: center;
+      width: 320px;
+    }
+
+    article.card figure {
+      margin: 0;
+      margin-bottom: var(--space-300);
+    }
+
+    article.card figure img {
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    article.card header {
+      padding: 0 var(--space-200);
+    }
+    article.card header h2 {
+      margin: 0;
+    }
+
+    article.card section {
+      color: var(--slate-500);
+      margin-top: var(--space-200);
+      padding: 0 var(--space-200);
+    }
+
   </style>
 </head>
 <body class="slate-300-bg">
@@ -48,9 +76,9 @@
     <article class="card">
       <figure><img src="images/image-qr-code.png" alt="QR Code"></figure>
       <header>
-        <h2>Improve your front-end skills by building projects</h2>
+        <h2 class="text-preset-1">Improve your front-end skills by building projects</h2>
       </header>
-      <section>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</section>
+      <section class="text-preset-2">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</section>
     </article>
   </main>
 </body>
